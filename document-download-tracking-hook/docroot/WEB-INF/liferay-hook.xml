@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!DOCTYPE hook PUBLIC "-//Liferay//DTD Hook 6.1.0//EN" "http://www.liferay.com/dtd/liferay-hook_6_1_0.dtd">
+
+<hook>
+
+	<language-properties>content/Language.properties</language-properties>
+	<custom-jsp-dir>/WEB-INF/jsps</custom-jsp-dir>
+	
+	<servlet-filter>
+		<servlet-filter-name>DLRecord Filter</servlet-filter-name>
+		<servlet-filter-impl>com.liferay.documentlibrary.hook.filter.DLRecordFilter</servlet-filter-impl>
+		<init-param>
+			<param-name>hello</param-name>
+			<param-value>world</param-value>
+		</init-param>
+	</servlet-filter>
+	<servlet-filter-mapping>
+		<servlet-filter-name>DLRecord Filter</servlet-filter-name>
+		<after-filter>Web Server Servlet</after-filter>
+		<url-pattern>/documents/*</url-pattern>
+		<dispatcher>REQUEST</dispatcher>
+		<dispatcher>FORWARD</dispatcher>
+	</servlet-filter-mapping>
+	
+	
+	<struts-action>
+		<struts-action-path>/document_library/view_download_log</struts-action-path>
+		<struts-action-impl>com.liferay.documentlibrary.portlet.ViewDownloadLogAction</struts-action-impl>
+	</struts-action>
+	
+	
+</hook>

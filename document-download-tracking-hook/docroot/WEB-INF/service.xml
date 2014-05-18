@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 6.1.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_6_1_0.dtd">
+
+<service-builder package-path="com.liferay.portlet.documentlibrary.recordlog">
+	<author>Jitendra Rajput</author>
+	<namespace>DLRecordLog</namespace>
+	<entity name="DLRecordLog" table="dlrecordlog" local-service="true" remote-service="false">
+
+	<!-- PK fields -->
+
+		<column name="logId" type="long" primary="true" />
+
+		<!-- Audit fields -->
+
+		<column name="fileEntryId" type="long" />
+		<column name="companyId" type="long" />
+		<column name="userId" type="long" />
+		<column name="userName" type="String" />
+		<column name="ipAddress" type="String" />
+		<column name="createDate" type="Date" />
+
+
+	<!-- Order By -->
+		<order by="desc">
+		<order-column name="createDate"></order-column>
+		</order>
+
+		<!-- Finder methods -->
+
+		<finder name="fileEntryId" return-type="Collection">
+			<finder-column name="fileEntryId" />
+		</finder>		
+		
+		
+	</entity>
+</service-builder>
