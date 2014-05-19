@@ -11,8 +11,10 @@ This app has functionality clear logs for any document.
 User can also clear download logs for all document if they wish.
 
 
-There few steps you need to follow to use this application.
+There few steps you need to follow to use this application. Here are deployment steps.
 
+
+<b>Deployment steps</b>
 1) Stop application server. Download document-download-tracking-hook-service jar from bundle and place this service jar to [SERVER]/lib/ext .
 Set below property in portal-ext file.
 
@@ -21,7 +23,14 @@ Set below property in portal-ext file.
     # 
    document.download.logs.enabled=true
    
+2) Deplpy document-download-tracking-hook
+3) Once you are done with first step next thing is to restart your server. 
 
-2) Once you are done with first step next thing is to restart your server. 
-3) You can view download logs from Control Panel--> Document Library . Select any document and click on Download Logs action.
+
+<b>How to use this application</p>
+
+1) If the logs are enabled and if you download any document then it will be displayed in log .
+2) If any logges in user downloads document then it will dispplay name of the user along with IP Adress and time of download.
+3) If any non-authenticated user download document in that case it will stored on the name of Guest.
+4) You can view download logs from Control Panel--> Document Library . Select any document and click on Download Logs action.
 4) You can clear logs for individual document as well for all documents.
