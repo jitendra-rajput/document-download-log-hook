@@ -28,7 +28,7 @@ Set below property in portal-ext file.
 
 2) Deplpy document-download-tracking-hook
 
-3) Once you are done with first step next thing is to restart your server. 
+3) Once you are done with above steps next thing is to restart your server. 
 
 
 <b>How to use this application</p>
