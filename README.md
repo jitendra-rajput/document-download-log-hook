@@ -40,4 +40,4 @@ Set below property in portal-ext file.
 
 4) You can view download logs from Control Panel--> Document Library . Select any document and click on Download Logs action.
 
-4) You can clear logs for individual document as well for all documents.
+5) You can clear logs for individual document as well for all documents.
