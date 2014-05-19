@@ -24,7 +24,9 @@ Set below property in portal-ext file.
     # 
    document.download.logs.enabled=true
    
+
 2) Deplpy document-download-tracking-hook
+
 3) Once you are done with first step next thing is to restart your server. 
 
 
