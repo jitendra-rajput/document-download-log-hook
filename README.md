@@ -19,9 +19,10 @@ There few steps you need to follow to use this application. Here are deployment 
 Download document-download-tracking-hook-service jar from bundle and place this service jar to [SERVER]/lib/ext .
 Set below property in portal-ext file.
 
- #
-    # This property is used to enable/disable document download tracker app.
-    # 
+ 
+   # # This property is used to enable/disable document download tracker app.
+   
+
    document.download.logs.enabled=true
    
 
