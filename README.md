@@ -33,7 +33,11 @@ Set below property in portal-ext file.
 <b>How to use this application</p>
 
 1) If the logs are enabled and if you download any document then it will be displayed in log .
+
 2) If any logges in user downloads document then it will dispplay name of the user along with IP Adress and time of download.
+
 3) If any non-authenticated user download document in that case it will stored on the name of Guest.
+
 4) You can view download logs from Control Panel--> Document Library . Select any document and click on Download Logs action.
+
 4) You can clear logs for individual document as well for all documents.
