@@ -23,7 +23,7 @@ Set below property in portal-ext file.
    # # This property is used to enable/disable document download tracker app.
    
 
-   document.download.logs.enabled=true
+   <b>document.download.logs.enabled=true</b>
    
 
 2) Deplpy document-download-tracking-hook
