@@ -13,9 +13,10 @@ User can also clear download logs for all document if they wish.
 
 There few steps you need to follow to use this application. Here are deployment steps.
 
-
 <b>Deployment steps</b>
-1) Stop application server. Download document-download-tracking-hook-service jar from bundle and place this service jar to [SERVER]/lib/ext .
+
+1) Stop application server.
+Download document-download-tracking-hook-service jar from bundle and place this service jar to [SERVER]/lib/ext .
 Set below property in portal-ext file.
 
  #
