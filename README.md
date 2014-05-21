@@ -13,7 +13,7 @@ User can also clear download logs for all document if they wish.
 
 There few steps you need to follow to use this application. Here are deployment steps.
 
-<b>Deployment steps</b>
+<b>Deployment steps for tomcat</b>
 
 1) Stop application server.
 Download document-download-tracking-hook-service jar from bundle and place this service jar to [SERVER]/lib/ext .
@@ -26,9 +26,34 @@ Set below property in portal-ext file.
    <b>document.download.logs.enabled=true</b>
    
 
-2) Deplpy document-download-tracking-hook
+2) Place document-download-tracking-hook war in [Server]/deploy directory
 
 3) Once you are done with above steps next thing is to restart your server. 
+
+
+<b>Deployment steps for JBoss (7.1)</b>
+
+1) Stop application server.
+Download document-download-tracking-hook-service jar from bundle and place this service jar to  [server]/modules/com/liferay/portal/main folder .
+
+
+2) Navigate to [server]/modules/com/liferay/portal/main folder and add below entry in module.xml.
+<resource-root path="document-download-tracking-hook-service.jar" />
+
+
+3) Set below property in portal-ext file.
+
+ 
+   # # This property is used to enable/disable document download tracker app.
+   
+
+   <b>document.download.logs.enabled=true</b>
+   
+
+4) Place document-download-tracking-hook war in [Server]/deploy directory
+
+5) Once you are done with above steps next thing is to restart your server. 
+
 
 
 <b>How to use this application</p>
