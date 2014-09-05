@@ -1,6 +1,6 @@
 document-download-log-hook
 ==========================
-
+(For LR 6.1 and LR 6.2)
 Its a common requirement where we want to track document download activities. 
 This can be done with any third party analytic tool as well but some times we can use Liferay persisted data itself to track downloads.
 
